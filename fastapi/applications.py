@@ -969,7 +969,7 @@ class FastAPI(Starlette):
         internally.
 
         The first time it is called it stores the result in the attribute
-        `app.openapi_schema`, and next times it is called, it just returns that same
+        , and next times it is called, it just returns that same
         result. To avoid the cost of generating the schema every time.
 
         If you need to modify the generated OpenAPI schema, you could modify it.
