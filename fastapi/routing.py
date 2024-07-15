@@ -5,10 +5,10 @@ import inspect
 import json
 from contextlib import AsyncExitStack
 from enum import Enum, IntEnum
-from typing import (
+from typing import Any, Callable, Coroutine
     Any,
     Callable,
-    Coroutine,
+from typing import Any, Callable, Coroutine
     Dict,
     List,
     Optional,
@@ -99,7 +99,7 @@ def _prepare_response_content(
             _prepare_response_content(
                 item,
                 exclude_unset=exclude_unset,
-                exclude_defaults=exclude_defaults,
+endpoint: Callable[..., Coroutine[Any, Any, Response]]
                 exclude_none=exclude_none,
             )
             for item in res
