@@ -51,7 +51,7 @@ class Param(FieldInfo):
         discriminator: Union[str, None] = None,
         strict: Union[bool, None] = _Unset,
         multiple_of: Union[float, None] = _Unset,
-        allow_inf_nan: Union[bool, None] = _Unset,
+allow_inf_nan: Union[bool, None] = _Unset,
         max_digits: Union[int, None] = _Unset,
         decimal_places: Union[int, None] = _Unset,
         examples: Optional[List[Any]] = None,
