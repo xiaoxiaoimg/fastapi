@@ -49,7 +49,7 @@ def get_bool_id(item_id: bool):
 
 
 @app.get("/path/param/{item_id}")
-def get_path_param_id(item_id: Optional[str] = Path()):
+def get_path_param_id(item_id: Optional[str] = Path(default=None)):
     return item_id
 
 
