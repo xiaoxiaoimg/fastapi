@@ -1,4 +1,4 @@
-import http
+import http.client as http
 from typing import FrozenSet, List, Optional
 
 from fastapi import FastAPI, Path, Query
